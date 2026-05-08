@@ -1,19 +1,36 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const todoSchema = new mongoose.Schema({
-  text: {
-    type: String,
-    required: true,
+const todoSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type : String,
+      maxlength : 80,
+    },
+
+    completed: {
+      type: Boolean,
+      default: false,
+    },
+
+    priority: {
+      type: String,
+      enum: ["Low", "Medium", "High"],
+      default: "Low",
+    },
+
+    deadline: {
+      type: String,
+    },
   },
+  {
+    timestamps: true,
+  }
+);
 
-  completed: {
-    type: Boolean,
-    default: false,
-  },
+const Todo = mongoose.model("Todo", todoSchema);
 
-  deadline: {
-    type: String,
-  },
-});
-
-module.exports = mongoose.model("Todo", todoSchema)
+export default Todo;
