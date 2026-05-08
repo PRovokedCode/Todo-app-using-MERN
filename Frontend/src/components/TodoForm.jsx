@@ -67,12 +67,15 @@ export default function TodoForm({ onAdd }) {
 
     onAdd({ title: title.trim(), description, priority, category, date, time });
     setTitle("");
+    setDescription("");
+    setCategory("Work");
     setDate("");
     setTime("");
   };
 
   const handleClear = () => {
     setTitle("");
+    setDescription("");
     setDate("");
     setTime("");
     setPriority("High");
@@ -134,6 +137,7 @@ export default function TodoForm({ onAdd }) {
         {/*Description*/}
         <textarea
           className="glass-input min-h-[100px] resize-none"
+          value={description}
           maxLength={80}
           onChange={(e) => setDescription(e.target.value)}
           placeholder="Task description"

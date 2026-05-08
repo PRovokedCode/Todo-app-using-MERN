@@ -25,6 +25,8 @@ export function useTasks() {
       const formatted = data.map((todo) => ({
         id: todo._id,
         title: todo.title,
+        description: todo.description,
+        category: todo.category,
         priority: todo.priority,
         date: todo.deadline?.split("T")[0] || "",
         time: todo.deadline?.split("T")[1]?.slice(0, 5) || "",
@@ -47,6 +49,8 @@ export function useTasks() {
 
       const newTodo = await createTodo({
         title: taskData.title,
+        description: taskData.description,
+        category: taskData.category,
         priority: taskData.priority,
         deadline,
       });
@@ -54,6 +58,8 @@ export function useTasks() {
       const formatted = {
         id: newTodo._id,
         title: newTodo.title,
+        description: newTodo.description,
+        category : newTodo.category,
         priority: newTodo.priority,
         date: newTodo.deadline?.split("T")[0] || "",
         time: newTodo.deadline?.split("T")[1]?.slice(0, 5) || "",

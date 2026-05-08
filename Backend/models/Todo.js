@@ -9,6 +9,12 @@ const todoSchema = new mongoose.Schema(
     description: {
       type : String,
       maxlength : 80,
+      default : "",
+    },
+
+    category: {
+      type: String,
+      default: "Work",
     },
 
     completed: {

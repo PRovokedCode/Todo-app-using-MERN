@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import dayjs from "dayjs";
 
+import FocusSessions from "./FocusSessions";
+
 import { fetchSettings, updateSettings } from "../services/settingsService";
 
 // ── Progress Ring ──────────────────────────────────────────
@@ -548,6 +550,8 @@ export default function RightPanel({ progress, stats }) {
       <ProgressRing progress={progress} stats={stats} />
 
       <PomodoroTimer />
+
+      <FocusSessions />
 
       <QuoteCard />
 

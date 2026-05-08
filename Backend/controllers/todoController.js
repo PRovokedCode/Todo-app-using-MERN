@@ -12,11 +12,12 @@ export const getTodos = async (req, res) => {
 
 export const createTodo = async (req, res) => {
   try {
-    const { title, description, priority, deadline } = req.body;
+    const { title, description, category, priority, deadline } = req.body;
 
     const todo = await Todo.create({
       title,
       description,
+      category,
       priority,
       deadline,
     });

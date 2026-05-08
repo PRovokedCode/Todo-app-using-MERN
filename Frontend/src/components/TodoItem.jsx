@@ -3,13 +3,25 @@ import { Trash2, Check, RotateCcw } from "lucide-react";
 
 const PRIORITY_STYLES = {
   High: {
-    chip: { background: "rgba(248,113,113,0.12)", border: "1px solid rgba(248,113,113,0.22)", color: "#f87171" },
+    chip: {
+      background: "rgba(248,113,113,0.12)",
+      border: "1px solid rgba(248,113,113,0.22)",
+      color: "#f87171",
+    },
   },
   Medium: {
-    chip: { background: "rgba(251,191,36,0.12)", border: "1px solid rgba(251,191,36,0.22)", color: "#fbbf24" },
+    chip: {
+      background: "rgba(251,191,36,0.12)",
+      border: "1px solid rgba(251,191,36,0.22)",
+      color: "#fbbf24",
+    },
   },
   Low: {
-    chip: { background: "rgba(96,165,250,0.12)", border: "1px solid rgba(96,165,250,0.22)", color: "#60a5fa" },
+    chip: {
+      background: "rgba(96,165,250,0.12)",
+      border: "1px solid rgba(96,165,250,0.22)",
+      color: "#60a5fa",
+    },
   },
 };
 
@@ -69,8 +81,19 @@ export default function TodoItem({ task, onToggle, onDelete, index }) {
             {task.title}
           </p>
 
+          {/* Description */}
+          {task.description && (
+            <p
+              className={`mt-1 text-xs leading-relaxed ${
+                task.done ? "text-white/20" : "text-white/45"
+              }`}
+            >
+              {task.description}
+            </p>
+          )}
+
           {/* Deadline */}
-          <p className="mt-1.5 text-[11px] text-white/28">{formatDeadline()}</p>
+          <p className="mt-1.5 text-[11px] text-white/35">{formatDeadline()}</p>
         </div>
 
         {/* Actions */}
