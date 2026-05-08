@@ -136,7 +136,7 @@ export default function TodoForm({ onAdd }) {
 
         {/*Description*/}
         <textarea
-          className="glass-input min-h-[100px] resize-none"
+          className="glass-input min-h-25 resize-none"
           value={description}
           maxLength={80}
           onChange={(e) => setDescription(e.target.value)}

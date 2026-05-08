@@ -483,7 +483,7 @@ function CalendarWidget() {
                   i === 0 ? d.subtract(1, "month") : d.add(1, "month"),
                 )
               }
-              className="rounded-lg px-3 py-0.5 text-sm text-white/40 transition-all duration-200 hover:bg-white/10 hover:text-white
+              className="rounded-lg px-3 py-0.5 text-white/40 transition-all duration-200 hover:bg-white/10 hover:text-white
               cursor-pointer
               text-xl"
             >
@@ -497,7 +497,7 @@ function CalendarWidget() {
         {dayLabels.map((d) => (
           <div
             key={d}
-            className="py-1 text-center text-[12px] uppercase tracking-wider text-white/100"
+            className="py-1 text-center text-[12px] uppercase tracking-wider text-white"
           >
             {d}
           </div>

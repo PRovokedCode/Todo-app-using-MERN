@@ -97,7 +97,7 @@ export default function TodoItem({ task, onToggle, onDelete, index }) {
         </div>
 
         {/* Actions */}
-        <div className="flex flex-shrink-0 gap-2">
+        <div className="flex shrink-0 gap-2">
           <motion.button
             whileTap={{ scale: 0.92 }}
             onClick={() => onToggle(task.id)}

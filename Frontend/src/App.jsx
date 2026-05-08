@@ -76,7 +76,7 @@ export default function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 mx-auto flex min-h-screen w-[92%] max-w-[1700px] flex-col gap-4 px-4 py-5"
+        className="relative z-10 mx-auto flex min-h-screen w-[92%] max-w-425 flex-col gap-4 px-4 py-5"
       >
         {/* Top Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3">

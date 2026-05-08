@@ -66,7 +66,7 @@ export default function HeroSection({ progress }) {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="glass-card px-6 py-4 min-w-[130px]"
+          className="glass-card px-6 py-4 min-w-32.5"
         >
           <p className="text-[10px] uppercase tracking-[3px] text-white/60 mb-1">
             Time
@@ -79,7 +79,7 @@ export default function HeroSection({ progress }) {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.35, duration: 0.6 }}
-          className="glass-card px-6 py-4 min-w-[130px]"
+          className="glass-card px-6 py-4 min-w-32.5"
           style={{
             background:
               "linear-gradient(135deg,rgba(96,165,250,0.12),rgba(167,139,250,0.12))",
