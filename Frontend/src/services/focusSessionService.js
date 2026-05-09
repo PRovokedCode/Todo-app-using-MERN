@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/focus-sessions";
+  `${import.meta.env.VITE_API_URL}/focus-sessions`;
 
 export const fetchSessions = async () => {
   const res = await axios.get(API);

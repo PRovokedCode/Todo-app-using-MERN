@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/settings";
+const API = `${import.meta.env.VITE_API_URL}/settings`;
 
 export const fetchSettings = async () => {
   const res = await axios.get(API);
