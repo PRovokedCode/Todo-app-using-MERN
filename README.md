@@ -18,9 +18,9 @@ Please use the application responsibly and avoid misusing or intentionally modif
 https://todo-app-frontend-95m2.onrender.com
 
 ## Backend API
-https://todo-app-backend-pl9e.onrender.com/todos
-https://todo-app-backend-pl9e.onrender.com/settings
-https://todo-app-backend-pl9e.onrender.com/focus-sessions
+-https://todo-app-backend-pl9e.onrender.com/todos
+-https://todo-app-backend-pl9e.onrender.com/settings
+-https://todo-app-backend-pl9e.onrender.com/focus-sessions
 
 ---
 
