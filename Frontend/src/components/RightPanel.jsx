@@ -228,7 +228,7 @@ function PomodoroTimer() {
       transition={{ delay: 0.6, duration: 0.7 }}
       className="glass-card px-6 py-5"
     >
-      <h3 className="font-syne mb-3 text-base font-bold">Focus Timer</h3>
+      <h3 className="font-syne mb-3 text-base font-bold">Timer</h3>
 
       {/* Mode pills */}
       <div className="mb-4 flex flex-wrap items-center gap-2">
